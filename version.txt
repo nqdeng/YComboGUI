@@ -1,0 +1,8 @@
+[VERSION]
+1.0.1
+
+[DOWNLOAD URL]
+https://github.com/nqdeng/YComboGUI/zipball/master
+
+[CHANGE LOG]
+* The initial release.
