@@ -1,0 +1,168 @@
+/**
+ * YCombo GUI - UI Style
+ * Copyright(c) 2012 Alibaba.Com, Inc.
+ * MIT Licensed
+ * @author Nanqiao Deng
+ */
+
+html,body {
+border:0;
+overflow:hidden;
+margin:0;
+padding:0;
+}
+
+html {
+height:100%;
+}
+
+body {
+background-color:#F0F0F0;
+font-family:"Segoe UI",Tahoma;
+font-size:x-small;
+height:100%;
+}
+
+#screen {
+height:100%;
+padding-top:60px;
+}
+
+#screen h2 {
+bottom:0;
+color:#F3F3F3;
+cursor:default;
+font-size:96px;
+font-family:Impact,Tahoma;
+position:absolute;
+right:0;
+margin:0;
+padding:0;
+}
+
+#screen .wrapper1 {
+height:50%;
+padding:10px 10px 0;
+}
+
+#screen .wrapper2 {
+background:#FFF;
+height:100%;
+padding:10px;
+}
+
+#screen .wrapper3 {
+height:100%;
+position:relative;
+}
+
+#input,#output {
+font-size:x-small;
+height:100%;
+overflow:auto;
+position:absolute;
+width:100%;
+word-wrap:break-word;
+}
+
+#input .help {
+border:1px dashed #CCC;
+color:#777;
+text-align:center;
+padding:10px;
+}
+
+#list a {
+cursor:default;
+display:block;
+line-height:20px;
+outline:none;
+padding-left:24px;
+margin:5px 0;
+}
+
+#list a:hover {
+background-color:#F3F3F3;
+}
+
+#list .file {
+background:url(file.png) no-repeat 5px 0;
+color:#F90;
+}
+
+#list .folder {
+background:url(folder.png) no-repeat 5px 0;
+color:#09F;
+}
+
+#list .remove {
+background:url(remove.png) no-repeat;
+cursor:pointer;
+display:none;
+float:right;
+height:20px;
+width:20px;
+}
+
+#list a:hover .remove {
+display:block;
+}
+
+#output p {
+border-left:2px solid #FFF;
+padding-left:10px;
+margin:5px;
+}
+
+#output .info {
+border-left:2px solid #0F0;
+color:#0A0;
+}
+
+#output .warn {
+border-left:2px solid #FF0;
+color:#AA0;
+}
+
+#output .error {
+border-left:2px solid #F00;
+color:#A00;
+}
+
+#panel {
+background:#F0F0F0;
+border-top:1px solid #AAA;
+border-bottom:1px solid #AAA;
+left:0;
+position:absolute;
+top:0;
+padding:10px;
+}
+
+#panel label {
+cursor:help;
+height:24px;
+line-height:24px;
+}
+
+#options {
+float:left;
+}
+
+#linebreakOpt {
+width:32px;
+}
+
+#rootOpt {
+width:200px;
+}
+
+#comboBtn {
+float:right;
+height:48px;
+width:84px;
+}
+
+#list,#output,#options input,#options select {
+font-family:Consolas,"Courier New";
+}

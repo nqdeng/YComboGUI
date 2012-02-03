@@ -1,0 +1,60 @@
+<!--
+/**
+ * YCombo GUI - UI HTML
+ * Copyright(c) 2012 Alibaba.Com, Inc.
+ * MIT Licensed
+ * @author Nanqiao Deng
+ */
+-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>YCombo GUI</title>
+    <link rel="stylesheet" type="text/css" href="ui.css" />
+</head>
+<body>
+    <div id="screen">
+    	<div class="wrapper1">
+			<div class="wrapper2">
+				<div class="wrapper3">
+			    	<h2>INPUT</h2>
+			    	<div id="input">
+			    		<div id="list"></div>
+			    		<div class="help">Add more input files by Drag&amp;Drop here</div>
+			    	</div>
+		    	</div>
+		    </div>
+		</div>
+		<div class="wrapper1">
+		    <div class="wrapper2">
+		    	<div class="wrapper3">
+			    	<h2>OUTPUT</h2>
+			    	<div id="output"></div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+    <div id="panel">
+    	<div id="options">
+	    	<label for="linebreakOpt" title="Insert a line break after the specified column number">&nbsp;line-break</label>
+	    	<input id="linebreakOpt" type="text" maxlength="3" />
+	    	<label for="charsetOpt" title="Read the input file using <charset>">charset</label>
+	    	<select id="charsetOpt">
+	    		<option value="UTF-8" selected="selected">UTF-8</option>
+	    		<option value="GBK">GBK</option>
+	    	</select>
+	    	<label for="rootOpt" title="The root folder of dependent files">root</label>
+	    	<select id="rootOpt" disabled="disabled">
+	    		<option value="">[Automatic]</option>
+	    	</select>
+	    	<br />
+	    	<input id="verboseOpt" type="checkbox" /><label for="verboseOpt" title="Display informational messages and warnings">verbose</label>
+	    	<input id="nomungeOpt" type="checkbox" /><label for="nomungeOpt" title="Minify only, do not obfuscate">nomunge</label>
+	    	<input id="preserveSemiOpt" type="checkbox" /><label for="preserveSemiOpt" title="Preserve all semicolons">preserve-semi</label>
+	    	<input id="disableOptimizationsOpt" type="checkbox" /><label for="disableOptimizationsOpt" title="Disable all micro optimizations">disable-optimizations</label>
+	    </div>
+    	<button id="comboBtn">YCombo!!</button>
+    </div>
+    <script src="ui.js"></script>
+</body>
+</html>
