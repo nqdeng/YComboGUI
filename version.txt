@@ -1,8 +1,8 @@
 [VERSION]
-1.0.1
+0.1.0
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-+ The initial release.
++ initial release
