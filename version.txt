@@ -2,7 +2,7 @@
 1.0.1
 
 [DOWNLOAD URL]
-https://github.com/nqdeng/YComboGUI/zipball/master
+http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-* The initial release.
++ The initial release.
