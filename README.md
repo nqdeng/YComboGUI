@@ -15,7 +15,7 @@ If you decide to compile this application by yourself, in addition to .NET Frame
 Installation
 ------------
 
-Download the latest zip package, extract all contents to a proper folder(ex. C:\Program Files\YComboGUI\), then run the execution file and enjoy.
+Download the latest [zip package](http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip), extract all contents to a proper folder(ex. C:\Program Files\YComboGUI\), then run the execution file and enjoy.
 
 Usage
 -----
@@ -23,6 +23,11 @@ Usage
 You could add inputs by Drag&Drop, or by the menu bar. If you decide to integrate context menu into Windows Explorer, you could also add inputs by right clicking on the target and select the "YCombo" menu item.
 
 After all inputs being added, you could adjust the combo options and click the "YCombo!!" button to start combination. Option details could be found in YCombo document.
+
+Uninstallation
+--------------
+
+Just remember to remove context menu before removing the folder where this application is installed to, that's all.
 
 License
 -------
