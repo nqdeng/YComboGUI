@@ -46,7 +46,7 @@ var output = (function () {
 	 */
 	function log(msg, type) {
 		var el = document.createElement('p');
-		el.innerHTML = unescape(msg);
+		el.innerText = unescape(msg);
 		el.className = type || '';
 		outputEl.appendChild(el);
 		outputEl.scrollTop = outputEl.scrollHeight;
@@ -62,7 +62,7 @@ var output = (function () {
 	}
 
 	// Exports interfaces.
-	return { clear: clear, error: info, info: info, log: log, warn: warn };
+	return { clear: clear, error: error, info: info, log: log, warn: warn };
 }());
 
 /**

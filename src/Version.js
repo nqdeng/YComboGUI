@@ -28,7 +28,7 @@ package Alibaba.F2E.YComboGUI
 		/**
 		 * URI of remote version info file.
 		 */
-		private const VERSION_INFO_URI:String = 'http://maru/version.txt';
+		private const VERSION_INFO_URI:String = 'http://nqdeng.github.com/YComboGUI/version.txt';
 
 		/**
 		 * Indicate whether version check is current processing.

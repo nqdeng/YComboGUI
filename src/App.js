@@ -26,7 +26,7 @@ package Alibaba.F2E.YComboGUI
 		/**
 		 * The online manual URI.
 		 */
-		private const MANUAL_URI:String = 'http://maru/';
+		private const MANUAL_URI:String = 'http://nqdeng.github.com/YComboGUI/';
 
 		/**
 		 * Hold the command-line args.
