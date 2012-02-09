@@ -5,10 +5,17 @@ YComboGUI
 
 *The GUI Front-End for YCombo.*
 
+Requirement
+-----------
+
+This application runs under Microsoft Window, and also depends on [Microsoft .NET Framework 2.0](http://www.microsoft.com/download/en/details.aspx?id=19) and [Java Runtime Environment](http://www.java.com/getjava/).
+
+If you decide to compile this application by yourself, in addition to .NET Framework 2.0, you also need Microsoft Resource Compiler(contained in Windows SDK) and ILMerge, both could be downloaded at [download.microsoft.com]([download.microsoft.com).
+
 Installation
 ------------
 
-Download the latest zip package, extract to a proper folder(ex. C:\Program Files\YComboGUI\), then run the execution file and enjoy.
+Download the latest zip package, extract all contents to a proper folder(ex. C:\Program Files\YComboGUI\), then run the execution file and enjoy.
 
 Usage
 -----
