@@ -22,7 +22,7 @@ Usage
 
 You could add inputs by Drag&Drop, or by the menu bar. If you decide to integrate context menu into Windows Explorer, you could also add inputs by right clicking on the target and select the "YCombo" menu item.
 
-After all inputs being added, you could adjust the combo options and click the "YCombo!!" button to start combination. Option details could be found in YCombo document.
+After all inputs being added, you could adjust the combo options and click the "YCombo!!" button to start combination. Option details could be found in [YCombo](https://github.com/nqdeng/YCombo) document.
 
 Uninstallation
 --------------
@@ -31,6 +31,7 @@ Just remember to remove context menu before removing the folder where this appli
 
 License
 -------
+
 YComboGUI is released under the MIT license:
 
 >Copyright (c) 2012 Alibaba.Com, Inc.
