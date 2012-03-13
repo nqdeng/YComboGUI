@@ -198,7 +198,7 @@ package Alibaba.F2E.YComboGUI
 			this.browser.add_Navigating(onNavigating);
 
 			this.fileDialog = new OpenFileDialog();
-			this.fileDialog.Filter = "Seed files (*.seed.js;*.seed.css)|*.seed.js;*.seed.css" ;
+			this.fileDialog.Filter = "Seed files (*.js.seed;*.css.seed)|*.js.seed;*.css.seed" ;
 			this.fileDialog.FilterIndex = 1;
 			this.fileDialog.Multiselect = true;
 			this.fileDialog.RestoreDirectory = true;
@@ -225,7 +225,7 @@ package Alibaba.F2E.YComboGUI
 		 */
 		private function AddInput(path:String):void
 		{
-			if (File.Exists(path) && (path.EndsWith('.seed.js') || path.EndsWith('.seed.css'))) {
+			if (File.Exists(path) && (path.EndsWith('.js.seed') || path.EndsWith('.css.seed'))) {
 				Eval('input.addFile(\'' + path.replace(/\\/g, '\\\\') + '\');');
 			} else if (Directory.Exists(path)) {
 				Eval('input.addFolder(\'' + path.replace(/\\/g, '\\\\') + '\');');
@@ -384,7 +384,7 @@ package Alibaba.F2E.YComboGUI
 		private function OnMenuAbout(sender:Object, args:EventArgs):void
 		{
 			var msg = ''
-				+ 'YCombo GUI ' + this.version.NUMBER + '\n'
+				+ 'YCombo GUI ' + Version.NUMBER + '\n'
 				+ 'Copyright(c) 2012 Alibaba.Com, Inc.\n'
 				+ 'MIT Licensed\n\n'
 

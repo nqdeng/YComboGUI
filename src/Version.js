@@ -23,7 +23,7 @@ package Alibaba.F2E.YComboGUI
 		/**
 		 * Current version number.
 		 */
-		public const NUMBER:String = '0.1.2';
+		public static const NUMBER:String = '0.1.3';
 
 		/**
 		 * URI of remote version info file.
@@ -92,16 +92,16 @@ package Alibaba.F2E.YComboGUI
 				newNumber = obj['VERSION'],
 				log = obj['CHANGE LOG'];
 
-			if (newNumber != this.NUMBER) {
+			if (newNumber != Version.NUMBER) {
 				this.Emit('updated', {
-					currentNumber: this.NUMBER,
+					currentNumber: Version.NUMBER,
 					downloadURL: downloadURL,
 					log: log,
 					newNumber: newNumber
 				});
 			} else if (!silence) {
 				this.Emit('unchange', {
-					currentNumber: this.NUMBER
+					currentNumber: Version.NUMBER
 				});
 			}
 		}

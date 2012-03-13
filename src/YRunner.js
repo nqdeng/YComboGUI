@@ -80,7 +80,7 @@ package Alibaba.F2E.YComboGUI
 		{
 			var appPath = Process.GetCurrentProcess().MainModule.FileName,
 				appFolder = Path.GetDirectoryName(appPath),
-				files = Directory.GetFiles(appFolder, 'ycombo*.jar');
+				files = Directory.GetFiles(appFolder, 'ycombo-' + Version.NUMBER + '.jar');
 
 			if (files.Length > 0) {
 				this.yComboPath = files[0];
