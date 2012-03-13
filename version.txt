@@ -1,5 +1,5 @@
 [VERSION]
-0.1.3
+0.1.3r2
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
@@ -8,3 +8,4 @@ http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 * [Command-Line Tool] Change seed file extension name from seed.[TYPE] to [TYPE].seed to avoid conflict with Unicorn.
 * [Command-Line Tool] Change common-line option "--prefix" to "--extname" to response to the change above.
 * Change extname of valid input file from "seed.js"&"seed.css" to "js.seed"&"css.seed".
+* Fix a bug when detecting the common root folder of seed files with new extname.
