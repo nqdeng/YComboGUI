@@ -179,7 +179,7 @@ var input = (function () {
 			index += 1;
 		}
 
-		if (/\.(?:js|css)$/.test(intersection[intersection.length - 1])) {
+		if (/\.(?:seed)$/.test(intersection[intersection.length - 1])) {
 			intersection.pop();
 		}
 

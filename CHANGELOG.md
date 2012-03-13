@@ -15,3 +15,7 @@
 * [Command-Line Tool] Change seed file extension name from seed.[TYPE] to [TYPE].seed to avoid conflict with Unicorn.
 * [Command-Line Tool] Change common-line option "--prefix" to "--extname" to response to the change above.
 * Change extname of valid input file from "seed.js"&"seed.css" to "js.seed"&"css.seed".
+
+2012.03.13, Version 0.1.3r2
+-------------------------
+* Fix a bug when detecting the common root folder of seed files with new extname.
