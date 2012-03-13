@@ -1,8 +1,10 @@
 [VERSION]
-0.1.2
+0.1.3
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-* Fix the incorrect output filename when input filename contains dot.
+* [Command-Line Tool] Change seed file extension name from seed.[TYPE] to [TYPE].seed to avoid conflict with Unicorn.
+* [Command-Line Tool] Change common-line option "--prefix" to "--extname" to response to the change above.
+* Change extname of valid input file from "seed.js"&"seed.css" to "js.seed"&"css.seed".
