@@ -229,6 +229,7 @@ var panel = (function () {
 	var linebreakOpt = document.getElementById('linebreakOpt'),
 		charsetOpt = document.getElementById('charsetOpt'),
 		rootOpt = document.getElementById('rootOpt'),
+		nocompressOpt = document.getElementById('nocompressOpt'),
 		verboseOpt = document.getElementById('verboseOpt'),
 		nomungeOpt = document.getElementById('nomungeOpt'),
 		preserveSemiOpt = document.getElementById('preserveSemiOpt'),
@@ -254,6 +255,10 @@ var panel = (function () {
 
 		if (value = rootOpt.options[rootOpt.selectedIndex].value) {
 			args.push('--root "' + value.replace(/\\/g, '\\\\') + '"');
+		}
+
+		if (nocompressOpt.checked) {
+			args.push('--nocompress');
 		}
 
 		if (verboseOpt.checked) {

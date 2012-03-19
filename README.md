@@ -10,7 +10,7 @@ Requirement
 
 This application runs under Microsoft Window, and also depends on [Microsoft .NET Framework 2.0](http://www.microsoft.com/download/en/details.aspx?id=19) and [Java Runtime Environment](http://www.java.com/getjava/).
 
-If you decide to compile this application by yourself, in addition to .NET Framework 2.0, you also need Microsoft Resource Compiler(contained in Windows SDK) and ILMerge, both could be downloaded at [download.microsoft.com](http://download.microsoft.com/).
+If you decide to compile this application by yourself, in addition to .NET Framework 2.0, you also need [NAnt](http://nant.sourceforge.net/), Microsoft Resource Compiler and ILMerge(both could be downloaded at [download.microsoft.com](http://download.microsoft.com/)).
 
 Installation
 ------------

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="YCombo" default="build" basedir=".">
+	<include buildfile="default.properties" failonerror="true" />
+	
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${release.dir}" />
+	</target>
+	
+	<target name="compile.rc" depends="clean">
+		<rc rcfile="${res.dir}/resources.rc" output="resources.res" />
+		<rc rcfile="${res.dir}/icon.rc" output="icon.res" />
+		<jsc target="exe" output="res.exe">
+			<sources>
+				<include name="${src.dir}/Resources.js" />
+			</sources>
+		</jsc>
+		<exec program="res.exe" />
+	</target>
+	
+	<target name="compile.app" depends="compile.rc">
+		<mkdir dir="${build.dir}" />
+	
+		<jsc target="winexe" output="${build.dir}/app.exe" win32res="icon.res">
+			<sources>
+				<include name="${src.dir}/App.js" />
+				<include name="${src.dir}/YRunner.js" />
+				<include name="${src.dir}/Version.js" />
+			</sources>
+			<references>
+				<include name="${lib.dir}/Alibaba.F2E.JsEventEmitter.dll" />
+			</references>
+			<resources>
+				<include name="icon.resources" />
+			</resources>
+		</jsc>
+		
+		<jsc target="library" output="${build.dir}/YComboGUI.Resources.dll" win32res="resources.res">
+			<sources>
+				<include name="${src.dir}/Empty.js" />
+			</sources>
+		</jsc>
+		
+		<exec program="ilmerge.exe">
+			<arg value="/t:winexe" />
+			<arg value="/ndebug" />
+			<arg value="/out:${build.dir}\\YComboGUI.exe" />
+			<arg value="${build.dir}\\app.exe" />
+			<arg value="${lib.dir}\\Alibaba.F2E.JsEventEmitter.dll" />
+		</exec>
+	</target>
+	
+	<target name="build" depends="compile.app">
+		<delete file="res.exe" />
+		<delete file="${build.dir}/app.exe" />
+		<delete file="resources.res" />
+		<delete file="icon.res" />
+		<delete file="icon.resources" />
+		
+		<if test="${directory::exists(ycombo.build.dir)}">
+			<copy todir="${build.dir}">
+			    <fileset basedir="${ycombo.build.dir}">
+			        <include name="*" />
+			    </fileset>
+			</copy>
+		</if>
+		
+		<zip zipfile="${release.dir}/ycombogui-latest.zip">
+            <fileset basedir="${build.dir}" prefix="ycombogui-latest">
+                <include name="*" />
+            </fileset>
+		</zip>
+	</target>
+</project>

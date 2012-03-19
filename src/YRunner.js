@@ -209,7 +209,7 @@ package Alibaba.F2E.YComboGUI
 			this.Emit('exit');
 
 			if (exitCode == 0) {
-				this.Emit('info', '[INFO] YCombo succeeded in ' + elapsedTime + ' seconds.');
+				this.Emit('info', '[INFO] YCombo finished in ' + elapsedTime + ' seconds.');
 			} else {
 				this.Emit('error', '[ERROR] YCombo failed with errors.');
 			}
