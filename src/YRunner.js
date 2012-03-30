@@ -80,18 +80,15 @@ package Alibaba.F2E.YComboGUI
 		{
 			var appPath = Process.GetCurrentProcess().MainModule.FileName,
 				appFolder = Path.GetDirectoryName(appPath),
-				files = Directory.GetFiles(appFolder, 'ycombo*.jar');
+				files = Directory.GetFiles(appFolder, 'ycombo-' + Version.NUMBER + '.jar');
 
 			if (files.Length > 0) {
 				this.yComboPath = files[0];
-				if (files.Length > 1) {
-					this.Emit('warn', '[WARNING] Multiple ycombo*.jar were found in the app folder. Use ' + this.yComboPath + ' by default.');
-				}
 			} else {
 				this.Emit(
 					'fatal',
 
-					'Cannot find ycombo*.jar in app folder.\n\n' +
+					'Cannot find ycombo-' + Version.NUMBER + '.jar in app folder.\n\n' +
 
 					'Reinstall this program may resolve this problem.'
 				);
