@@ -1,11 +1,9 @@
 [VERSION]
-0.1.4
+0.1.5
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-* Fix the log when input file has syntax error.
-* Error in one seed file will not break the whole combo task now.
-* Add new common-line option "--nocompress", allowing to combine file only.
-* GUI: Add checkbox for option "--nocompress".
+* Auto trim head & tail whitespace of #require instruction line for improving fault-tolerant.
+* GUI: Enforce GUI application to use the same version of command-line application.
