@@ -1,9 +1,8 @@
 [VERSION]
-0.1.5
+0.1.6
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-* Auto trim head & tail whitespace of #require instruction line for improving fault-tolerant.
-* GUI: Enforce GUI application to use the same version of command-line application.
+* Add a semicolon between files that combined together to avoid the known semicolon bug.
