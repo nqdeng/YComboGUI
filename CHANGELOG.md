@@ -31,3 +31,8 @@
 -------------------------
 * Auto trim head & tail whitespace of #require instruction line for improving fault-tolerant.
 * GUI: Enforce GUI application to use the same version of command-line application.
+
+2012.04.25, Version 0.1.6
+-------------------------
+* Add a semicolon between files that combined together to avoid the known semicolon bug.
+
