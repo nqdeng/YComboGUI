@@ -1,8 +1,8 @@
 [VERSION]
-0.1.6
+0.1.7
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-* Add a semicolon between files that combined together to avoid the known semicolon bug.
+* Fix the bug wrongly adding a semicolon between css files.
