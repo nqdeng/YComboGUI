@@ -36,3 +36,6 @@
 -------------------------
 * Add a semicolon between files that combined together to avoid the known semicolon bug.
 
+2012.04.27, Version 0.1.7
+-------------------------
+* Fix the bug wrongly adding a semicolon between css files.
