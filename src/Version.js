@@ -23,7 +23,7 @@ package Alibaba.F2E.YComboGUI
 		/**
 		 * Current version number.
 		 */
-		public static const NUMBER:String = '0.1.7';
+		public static const NUMBER:String = '0.1.8';
 
 		/**
 		 * URI of remote version info file.
