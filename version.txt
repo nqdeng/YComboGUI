@@ -1,8 +1,8 @@
 [VERSION]
-0.1.7
+0.1.8
 
 [DOWNLOAD URL]
 http://nqdeng.github.com/YComboGUI/ycombogui-latest.zip
 
 [CHANGE LOG]
-* Fix the bug wrongly adding a semicolon between css files.
+* Adjust file compression method. Now every required file is compressed independently and outputted one line per file.
